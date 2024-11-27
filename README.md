@@ -61,9 +61,9 @@ System.out.println(basics.equals(new Notepad("Equals basics", 2001)));
 ```
 
 ### Resposta: 
-    true\\
-    false\\
-    false\\
+    true
+    false
+    false
     false
 
 ### 2
@@ -101,8 +101,8 @@ if (!messages.contains(new Message("SMS"))) {
 System.out.println(messages.size());
 ```
 ### Resposta:
-    true\\
-    false\\
+    true
+    false
     2
 
     
