@@ -20,7 +20,8 @@ boolean areEqual = str1.equals(str3); // true, porque o método equals compara o
 ```
 ![image](https://github.com/user-attachments/assets/13f8b490-d75d-4ae4-a1a9-7e4c9bc69128)
 
-## Quiz 1
+## Quiz
+### 1
 ```
 public class Notepad {
     private String name;
@@ -65,6 +66,46 @@ System.out.println(basics.equals(new Notepad("Equals basics", 2001)));
     false\\
     false
 
+### 2
+```
+public class Message {
+    private String name;
+ 
+    public Message(String name) {
+        this.name = name;
+    }
+}
+```
+What does the following program print?
+
+```
+Message sms = new Message("SMS");
+Message mms = new Message("MMS");
+
+System.out.println(sms.equals(sms));
+System.out.println(sms.equals(mms));
+
+ArrayList<Message> messages = new ArrayList<>();
+if (!messages.contains(sms)) {
+    messages.add(sms);
+}
+
+if (!messages.contains(sms)) {
+    messages.add(sms);
+}
+
+if (!messages.contains(new Message("SMS"))) {
+    messages.add(sms);
+}
+
+System.out.println(messages.size());
+```
+### Resposta:
+    true\\
+    false\\
+    2
+
+    
 ## Referências
 https://cursos.alura.com.br/forum/topico-qual-seria-a-diferenca-entre-suar-o-e-o-equals-e-qual-o-momento-mais-adequado-de-usar-um-ou-o-outro-330393 \\
 https://www.linkedin.com/pulse/difference-between-equals-java-babar-shahzad/ \\
