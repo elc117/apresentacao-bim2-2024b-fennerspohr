@@ -20,7 +20,46 @@ boolean areEqual = str1.equals(str3); // true, porque o método equals compara o
 ```
 ![image](https://github.com/user-attachments/assets/13f8b490-d75d-4ae4-a1a9-7e4c9bc69128)
 
+## Quiz 1
+```
+public class Notepad {
+    private String name;
+    private int year;
+ 
+    public Notepad(String name, int year) {
+        this.name = name;
+        this.year = year;
+    }
+
+    public boolean equals(Object object) {
+        if (object == null || this.getClass() != object.getClass()) {
+            return false;
+        }
+
+        if (object == this) {
+            return true;
+        }
+
+        Notepad compared = (Notepad) object;
+
+        return this.nimi.equals(compared);
+    }
+}
+
+```
+What does the following program print?
+
+```
+Notepad basics = new Notepad("Equals basics", 2000);
+Notepad advanced = new Notepad("Equals advanced", 2001);
+
+System.out.println(basics.equals(basics));
+System.out.println(basics.equals(advanced));
+System.out.println(basics.equals(new Notepad("Equals basics", 2000)));
+System.out.println(basics.equals(new Notepad("Equals basics", 2001)));
+```
 
 ## Referências
-https://cursos.alura.com.br/forum/topico-qual-seria-a-diferenca-entre-suar-o-e-o-equals-e-qual-o-momento-mais-adequado-de-usar-um-ou-o-outro-330393
-https://www.linkedin.com/pulse/difference-between-equals-java-babar-shahzad/
+https://cursos.alura.com.br/forum/topico-qual-seria-a-diferenca-entre-suar-o-e-o-equals-e-qual-o-momento-mais-adequado-de-usar-um-ou-o-outro-330393 \\
+https://www.linkedin.com/pulse/difference-between-equals-java-babar-shahzad/ \\
+https://java-programming.mooc.fi/part-8/3-similarity-of-objects \\
