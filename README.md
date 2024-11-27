@@ -42,7 +42,7 @@ public class Notepad {
 
         Notepad compared = (Notepad) object;
 
-        return this.nimi.equals(compared);
+        return this.name.equals(compared);
     }
 }
 
@@ -58,6 +58,12 @@ System.out.println(basics.equals(advanced));
 System.out.println(basics.equals(new Notepad("Equals basics", 2000)));
 System.out.println(basics.equals(new Notepad("Equals basics", 2001)));
 ```
+
+### Resposta: 
+    true\\
+    false\\
+    false\\
+    false
 
 ## Referências
 https://cursos.alura.com.br/forum/topico-qual-seria-a-diferenca-entre-suar-o-e-o-equals-e-qual-o-momento-mais-adequado-de-usar-um-ou-o-outro-330393 \\
